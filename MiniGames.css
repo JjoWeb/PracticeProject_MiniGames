@@ -1,0 +1,92 @@
+body {
+   text-align: center;
+   font-family: "comic sans MS";
+   background-color: rgba(255, 0, 255, 0.1);
+}
+
+header {
+   width: 90%;
+   margin: auto;
+   margin-bottom: 20px;
+   border-radius: 20px;
+   font-variant: small-caps;
+}
+
+#pageDescription {
+   width: 45%;
+   margin: auto;
+   font-size: 20px;
+   border-bottom: 5px dotted purple;
+}
+
+.gameArticles {
+   max-width: 50%;
+   margin: auto;
+   padding: 10px;
+   border: 10px solid rgba(128, 0, 128, 0.3);
+   border-radius: 80px;
+   background-color: rgba(138, 43, 226, 0.15);
+}
+
+#guessNumber,
+#typeWord {
+   margin-bottom: 50px;
+}
+
+.submitButtons {
+   width: 100px;
+   height: 100px;
+   border: none;
+   border-radius: 60px;
+   background-color: rgba(0, 191, 255, 0.6);
+   font-size: large;
+}
+
+.submitButtons:hover {
+   border: 5px solid rgb(30, 144, 255);
+   background-color: rgba(0, 191, 255, 0.9);
+}
+
+.submitButtons:active {
+   border: none;
+   background-color: rgba(128, 0, 128, 0.3);
+}
+
+.generateContentButtons {
+   width: 100px;
+   height: 100px;
+   border: none;
+   border-radius: 60px;
+   background-color: rgba(144, 238, 144, 0.6);
+   font-size: large;
+}
+
+.generateContentButtons:hover {
+   background-color: rgba(144, 238, 144, 0.9);
+   border: 5px solid rgb(50, 205, 50);
+}
+
+.generateContentButtons:active {
+   border: none;
+   background-color: rgba(128, 0, 128, 0.3);
+}
+
+.hints {
+   width: 50%;
+   margin: auto;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   border: 5px solid rgba(255, 165, 0, 0.6);
+}
+
+.results {
+   margin: auto;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   width: 50%;
+   border-bottom: 2px solid rgb(0, 191, 255);
+}
+
+#randomWord {
+   font-size: 150%;
+}

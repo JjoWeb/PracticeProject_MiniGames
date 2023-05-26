@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-games!</title>
+    <link rel="stylesheet" href="MiniGames.css">
+    <script src="MiniGames.js"></script>
+</head>
+<body>
+<header>
+    <h1 id="pageHeading">Mini-games made with JavaScript</h1>
+    <p id="pageDescription">Try them out and HAVE FUN!</p>
+</header>
+
+<main>
+<article class="gameArticles" id="guessNumber">
+    <h1 style= "text-align: center;">Guess a number between 0 and 10</h1>
+    <section id="userNumber">
+        <input id="guessNumberInput" type="number" min="0" max="10" step ="1" placeholder="Nothing typed yet"></input>
+        <br>
+        <button class="submitButtons" id="guessNumberSubmitButtons" onclick= "compareNumbers()" onkeypress= "compareNumbers()" style= "padding: 10px; margin-top: 10px;">Submit</button>
+        <p class ="hints" id="guessNumberHint">...</p>
+        <button class="generateContentButtons" onclick= "resetNumber()">Get New Number</button>
+        <p id="generateP"></p>
+    </section>
+</article>
+
+<article class="gameArticles" id="typeWord">
+    <h1>Type the word without looking at the keyboard</h1>
+    <section id="middle">
+        <button class="generateContentButtons" onclick="generateWord()">Get New Word</button>
+        <p id="randomWord">~</p>
+<!-- Stopwatch placeholder
+        <div>
+            <p id="clock">Place stopwatch here</p>
+        </div>
+//-->
+    </section>
+    <section>
+        <label for="typeWordInput">Type Here</label>
+        <input id="typeWordInput" type="text" placeholder="Nothing typed yet"></input>
+        <button class="submitButtons" id="typeWordSubmitButtons" onclick="compareWords()">Submit</button>
+        <p class="results" id="typeWordFeedback">Result...</p>
+    </section>
+</article>
+
+<article class="gameArticles" id="describeEmotion">
+    <h1>Describe the depicted emotion in one word (noun)</h1>
+    <section id="questionContainer" >
+        <img class="images" src="docs/assets/anger.jpg" width= "300px" height=" 250px"><br>
+        <input class="inputs" id="describeEmotionInput" placeholder="Nothing typed yet">
+        <button class="submitButtons" id="DescribeemotionsSubmitButtons" onclick= "reviewAnswer()">Submit</button>
+        <p class="hints" id="describeEmotionsHint" style="font-style: italic">Hint: 5 letters</p>
+    </section>
+    <p id="anger" class="results describeEmotionsResults">Result...</p>
+    <section class="btn-container">
+        <button class="generateContentButtons" onclick="previous()">Previous Image</button>
+        <button class="generateContentButtons" onclick="next()">Next Image</button>
+        <p>(Navigation: Left/Right arrow keys to change images, Enter to submit answer)</p>
+    </section>
+</article>
+</main>
+</body>
+</html>
