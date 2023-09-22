@@ -11,12 +11,12 @@
 <body>
 <header>
     <h1 id="pageHeading">Mini-games made with JavaScript</h1>
-    <p id="pageDescription">Try them out and HAVE FUN!</p>
+    <p id="pageDescription">Try'em out! HAVE FUN!</p>
 </header>
 
 <main>
 <article class="gameArticles" id="guessNumber">
-    <h1 style= "text-align: center;">Guess a number between 0 and 10</h1>
+    <h1>Guess a number between 0 and 10</h1>
     <section id="userNumber">
         <input id="guessNumberInput" type="number" min="0" max="10" step ="1" placeholder="Nothing typed yet"></input>
         <br>
@@ -60,6 +60,45 @@
         <button class="generateContentButtons" onclick="next()">Next Image</button>
         <p>(Navigation: Left/Right arrow keys to change images, Enter to submit answer)</p>
     </section>
+</article>
+
+<article class="gameArticles" id="videoQuiz">
+    <h1>Pay attention to what you see in the video and answer the questions</h1>
+    <section id="contentSection">
+        <video id="myVideo" controls="">
+            <source src="docs/assets/people.mp4">
+        </video>
+        <section id="questions">
+            <section id="questionOneSection" style="display: none">
+                <p id="q1">Question 1: <br> Is there any people wearing a hat?</p>
+                <section id="q1InputSection">
+                    <button class="submitButtons" id="q1Check1" type="button" style="margin: 1rem; padding: 1rem; cursor: pointer;">Yes</button>
+                    <button class="submitButtons" id= "q1Check2" type="button" style="margin: 1rem; padding: 1rem; cursor: pointer;">No</button>
+                </section>
+                <p id="q1Result" class="results"></p>
+                <button class="generateContentButtons" id="q1resumeButton" style="display: none">Resume Video</button>
+            </section>
+            <section id="questionTwoSection" style="display: none">
+                <p id="q2">Question 2:<br> Is there any people wearing glasses?</p>
+                <section id="q2InputSection">
+                    <button class="submitButtons" id= "q2Check1" type="button" style="margin: 1rem; padding: 1rem; cursor: pointer;">Yes</button>
+                    <button class="submitButtons" id= "q2Check2" type="button" style="margin: 1rem; padding: 1rem; cursor: pointer;" >No</button>
+                </section>
+                <p id="q2Result" class="results"></p>
+                <button class="generateContentButtons" id="q2resumeButton" style="display: none">Resume Video</button>
+            </section>
+            <section id="questionThreeSection" style="display: none">
+                <p id="q3">Final Question: <br> Is there a person holding an 'H&M' bag?</p>
+                <section id="q3InputSection">
+                    <button class="submitButtons" id= "q3Check1" type="button" style="margin: 1rem; padding: 1rem; cursor: pointer;">Yes</button>
+                    <button class="submitButtons" id= "q3Check2" type="button" style="margin: 1rem; padding: 1rem; cursor: pointer;">No</button>
+                </section>
+                <p id="q3Result" class="results"></p>
+                <p id="finalScore"></p>
+                <button class="generateContentButtons" id="q3Button" style="display: none">Play Again!</button>
+            </section>
+        </section>
+    </section> 
 </article>
 </main>
 </body>
