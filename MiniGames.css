@@ -22,15 +22,11 @@ header {
 .gameArticles {
    max-width: 50%;
    margin: auto;
+   margin-bottom: 50px;
    padding: 10px;
    border: 10px solid rgba(128, 0, 128, 0.3);
    border-radius: 80px;
    background-color: rgba(138, 43, 226, 0.15);
-}
-
-#guessNumber,
-#typeWord {
-   margin-bottom: 50px;
 }
 
 .submitButtons {
@@ -57,6 +53,7 @@ header {
    height: 100px;
    border: none;
    border-radius: 60px;
+   margin: auto;
    background-color: rgba(144, 238, 144, 0.6);
    font-size: large;
 }
@@ -71,7 +68,10 @@ header {
    background-color: rgba(128, 0, 128, 0.3);
 }
 
-.hints {
+.hints,
+#q1,
+#q2,
+#q3 {
    width: 50%;
    margin: auto;
    margin-top: 15px;
@@ -85,6 +85,15 @@ header {
    margin-bottom: 15px;
    width: 50%;
    border-bottom: 2px solid rgb(0, 191, 255);
+}
+
+#videoQuiz {
+   min-height: 35rem;
+}
+
+#videoQuiz video {
+   margin: auto;
+   width: 90%;
 }
 
 #randomWord {
