@@ -1,101 +1,178 @@
+/*
+BEGINING CUSTOM HEADER STENCIL SECTION
+*/
+#header_stencil_main {
+    width: 12.5rem;
+}
+
+#header_stencil_titleAndSignature {
+    border: solid black;
+    border-radius: 0% 0% 100% 0%;
+    margin-bottom: -4rem;
+    background-color: rgba(0, 0, 0, 1);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#header_stencil_title {
+    color: white;
+    line-height: 1.7rem;
+    font-weight: 50;
+    margin-bottom: 0%;
+    text-align: left;
+}
+
+#header_stencil_signature {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 4.7rem;
+    color: black;
+    background-color: white;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: 20;
+}
+
+#header_stencil_borders {
+    width: 40%;
+    margin-left: 3.7rem;
+}
+
+#header_stencil_borders > * {
+    width: 2rem;
+}
+
+#header_stencil_border1 {
+    border: solid darkturquoise;
+    border-width: 0rem 0.1rem 0.5rem 0rem;
+    border-radius: 0% 100% 100% 50%;
+    padding: 1rem;
+    margin-bottom: -3.5rem;
+    box-shadow: -2rem -2rem -2rem -2rem black;
+}
+
+#header_stencil_border2 {
+    border: solid fuchsia;
+    border-width: 0rem 0.1rem 0.5rem 0rem;
+    border-radius: 0% 80% 100% 50%;
+    padding: 1rem;
+    margin-bottom: -3.5rem;
+    transform: rotate(-15deg);
+}
+
+#header_stencil_border3 {
+    border: solid darkviolet;
+    border-width: 0rem 0.1rem 0.5rem 0rem;
+    border-radius: 0% 50% 100% 50%;
+    padding: 1rem;
+    transform: rotate(-28deg);
+}
+
+/*
+END CUSTOM HEADER STENCIL SECTION
+*/
+
 body {
-   text-align: center;
-   font-family: "comic sans MS";
-   background-color: rgba(255, 0, 255, 0.1);
+    text-align: center;
+    font-family: "comic sans MS";
+    background-color: rgba(255, 0, 255, 0.1);
 }
 
 header {
-   width: 90%;
-   margin: auto;
-   margin-bottom: 20px;
-   border-radius: 20px;
-   font-variant: small-caps;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-variant: small-caps;
 }
 
 #pageDescription {
-   width: 45%;
-   margin: auto;
-   font-size: 20px;
-   border-bottom: 5px dotted purple;
+    width: 45%;
+    margin: auto;
+    font-size: 20px;
+    border-bottom: 5px dotted purple;
 }
 
 .gameArticles {
-   max-width: 50%;
-   margin: auto;
-   margin-bottom: 50px;
-   padding: 10px;
-   border: 10px solid rgba(128, 0, 128, 0.3);
-   border-radius: 80px;
-   background-color: rgba(138, 43, 226, 0.15);
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 10px solid rgba(128, 0, 128, 0.3);
+    border-radius: 80px;
+    background-color: rgba(138, 43, 226, 0.15);
 }
 
 .submitButtons {
-   width: 100px;
-   height: 100px;
-   border: none;
-   border-radius: 60px;
-   background-color: rgba(0, 191, 255, 0.6);
-   font-size: large;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 60px;
+    background-color: rgba(0, 191, 255, 0.6);
+    font-size: large;
 }
 
 .submitButtons:hover {
-   border: 5px solid rgb(30, 144, 255);
-   background-color: rgba(0, 191, 255, 0.9);
+    border: 5px solid rgb(30, 144, 255);
+    background-color: rgba(0, 191, 255, 0.9);
 }
 
 .submitButtons:active {
-   border: none;
-   background-color: rgba(128, 0, 128, 0.3);
+    border: none;
+    background-color: rgba(128, 0, 128, 0.3);
 }
 
 .generateContentButtons {
-   width: 100px;
-   height: 100px;
-   border: none;
-   border-radius: 60px;
-   margin: auto;
-   background-color: rgba(144, 238, 144, 0.6);
-   font-size: large;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 60px;
+    margin: auto;
+    background-color: rgba(144, 238, 144, 0.6);
+    font-size: large;
 }
 
 .generateContentButtons:hover {
-   background-color: rgba(144, 238, 144, 0.9);
-   border: 5px solid rgb(50, 205, 50);
+    background-color: rgba(144, 238, 144, 0.9);
+    border: 5px solid rgb(50, 205, 50);
 }
 
 .generateContentButtons:active {
-   border: none;
-   background-color: rgba(128, 0, 128, 0.3);
+    border: none;
+    background-color: rgba(128, 0, 128, 0.3);
 }
 
 .hints,
 #q1,
 #q2,
 #q3 {
-   width: 50%;
-   margin: auto;
-   margin-top: 15px;
-   margin-bottom: 15px;
-   border: 5px solid rgba(255, 165, 0, 0.6);
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 5px solid rgba(255, 165, 0, 0.6);
 }
 
 .results {
-   margin: auto;
-   margin-top: 15px;
-   margin-bottom: 15px;
-   width: 50%;
-   border-bottom: 2px solid rgb(0, 191, 255);
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 50%;
+    border-bottom: 2px solid rgb(0, 191, 255);
 }
 
 #videoQuiz {
-   min-height: 35rem;
+    min-height: 35rem;
 }
 
 #videoQuiz video {
-   margin: auto;
-   width: 90%;
+    margin: auto;
+    width: 90%;
 }
 
 #randomWord {
-   font-size: 150%;
+    font-size: 150%;
 }
